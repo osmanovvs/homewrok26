@@ -59,6 +59,6 @@ public class Movie {
 
     @Override
     public String toString() {
-        return String.format("Movie{title='%s', year=%d, director='%s', description='%s', actors=%s}", title, year, director, description, actors);
+        return String.format("Movie{title='%s' , year=%d, director='%s', description='%s', actors=%s}", title, year, director, description, actors);
     }
 }
