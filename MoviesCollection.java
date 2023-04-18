@@ -22,9 +22,9 @@ public class MoviesCollection {
         try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
 
             Gson gson = new GsonBuilder().create();
-            // Определяем тип списка объектов, который мы ожидаем получить из файла JSON
+
             Type listType = new TypeToken<ArrayList<Movie>>() {}.getType();
-            // Используем метод fromJson() для преобразования JSON-строки в список объектов класса Movie
+
             movies = gson.fromJson(reader, listType);
         } catch (IOException e) {
             System.out.println("Error loading file: " + e.getMessage());
